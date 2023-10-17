@@ -8,32 +8,32 @@ app = FastAPI()
 APP_KEY = "UDHFTGHVCJUDI"
 
 fruits = [
-    {"fruit": "apple", "color": "red"},
-    {"fruit": "orange", "color": "orange"},
-    {"fruit": "Grapes", "color": "purple"},
-    {"fruit": "cherry", "color": "red red"},
-    {"fruit": "Bananas", "color": "yellow"},
-    {"fruit": "Fish", "color": "its not a fruit"},
-    {"fruit": "man", "color": "i dont encourage cannibalism"},
-    {"fruit": "kiwi", "color": "green"},
-    {"fruit": "Mango", "color": "light yellow"},
-    {"fruit": "Pomegranate", "color": "dark purple"},
-    {"fruit": "watermelon", "color": "green with stripes"},
-    {"fruit": "pineapple", "color": "some kind of yellow"},
-    {"fruit": "Lemon", "color": "very very yellow"},
-    {"fruit": "Strawberry", "color": "red with dots"},
-    {"fruit": "Avocado", "color": "green but not green completely"},
-    {"fruit": "I can't think of any", "color": "bro cant think of any fruits"},
-    {"fruit": "coke", "color": "thats a drink"},
-    {"fruit": "fanta", "color": "thats soda"},
-    {"fruit": "water", "color": "bruh we just degrading"},
-    {"fruit": "nothing", "color": "it has no color"}
+    {"fruit": "apple", "color": "red", "goodness": "yes"},
+    {"fruit": "orange", "color": "orange", "goodness": "yes"},
+    {"fruit": "Grapes", "color": "purple","goodness": "no"},
+    {"fruit": "cherry", "color": "red red", "goodness": "yes"},
+    {"fruit": "Bananas", "color": "yellow", "goodness":"no"},
+    {"fruit": "Fish", "color": "its not a fruit","goodness":"meh"},
+    {"fruit": "man", "color": "i dont encourage cannibalism", "goodness": "yes"},
+    {"fruit": "kiwi", "color": "green","goodness": "no"},
+    {"fruit": "Mango", "color": "light yellow" ,"goodness":"yes"},
+    {"fruit": "Pomegranate", "color": "dark purple", "goodness": "yes"},
+    {"fruit": "watermelon", "color": "green with stripes", "goodness": "no"},
+    {"fruit": "pineapple", "color": "some kind of yellow", "goodness": "yes"},
+    {"fruit": "Lemon", "color": "very very yellow", "goodness": "yes"},
+    {"fruit": "Strawberry", "color": "red with dots", "goodness": "yes"},
+    {"fruit": "Avocado", "color": "green but not green completely", "goodness": "yes"},
+    {"fruit": "I can't think of any", "color": "bro cant think of any fruits", "goodness": "what"},
+    {"fruit": "coke", "color": "thats a drink", "goodness": "yes"},
+    {"fruit": "fanta", "color": "thats soda", "goodness": "yes"},
+    {"fruit": "water", "color": "bruh we just degrading", "goodness:"yes"},
+    {"fruit": "nothing", "color": "it has no color", "goodness":"nothing"}
 ]
 
 Grades = [
-    {"name": "leon", "Grades": 9},
-    {"name": "Richard", "Grades": 8},
-    {"name": "God", "Grades": 69}
+    {"name": "leon", "Grades": 9, "gender": "male"},
+    {"name": "Richard", "Grades": 8, "gender": "male"},
+    {"name": "God", "Grades": 69, "gender": "he got none"}
 ]
 
 @app.get("/fruits/get_info")
